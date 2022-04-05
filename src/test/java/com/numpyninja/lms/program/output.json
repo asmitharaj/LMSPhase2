@@ -1,0 +1,213 @@
+[
+    {
+        "userRoleId": 7,
+        "user": {
+            "userId": "U07",
+            "userFirstName": "Sarah",
+            "userLastName": "Anderson",
+            "userPhoneNumber": 6512348913,
+            "userLocation": "Texas",
+            "userTimeZone": "CST",
+            "userLinkedinUrl": "https://www.linkedin.com/in/Sarah Anderson/",
+            "userEduUg": "Computer Science Engineering",
+            "userEduPg": " MBA",
+            "userComments": null,
+            "userVisaStatus": "US-Citizen",
+            "creationTime": "2021-10-04T22:09:38.076+00:00",
+            "lastModTime": "2021-10-04T22:09:38.076+00:00"
+        },
+        "role": {
+            "roleId": "R03",
+            "roleName": "Student",
+            "roleDesc": "LMS_Student",
+            "creationTime": "2021-10-04T22:06:42.970+00:00",
+            "lastModTime": "2021-10-04T22:06:42.970+00:00"
+        },
+        "batch": [
+            {
+                "batchId": 1,
+                "batchName": "01",
+                "batchDescription": "SDET BATCH 01 Updation",
+                "batchStatus": "In Active",
+                "program": {
+                    "programId": 1,
+                    "programName": "SDET",
+                    "programDescription": null,
+                    "programStatus": "Active"
+                },
+                "batchNoOfClasses": 6
+            },
+            {
+                "batchId": 3,
+                "batchName": "02",
+                "batchDescription": "SDET BATCH 02",
+                "batchStatus": "Active",
+                "program": {
+                    "programId": 3,
+                    "programName": "Machine Learning",
+                    "programDescription": null,
+                    "programStatus": "Active"
+                },
+                "batchNoOfClasses": 6
+            }
+        ],
+        "userRoleStatus": "Active",
+        "creationTime": "2021-10-04T22:18:40.000+00:00",
+        "lastModTime": "2021-10-04T22:18:40.000+00:00"
+    },
+    {
+        "userRoleId": 8,
+        "user": {
+            "userId": "U08",
+            "userFirstName": "Maria",
+            "userLastName": "Peterson",
+            "userPhoneNumber": 6512391300,
+            "userLocation": "Ontario",
+            "userTimeZone": "CST",
+            "userLinkedinUrl": "https://www.linkedin.com/in/MariaPeterson/",
+            "userEduUg": "Information Sciences",
+            "userEduPg": " MBA",
+            "userComments": null,
+            "userVisaStatus": "Canada-Citizen",
+            "creationTime": "2021-10-04T22:09:38.076+00:00",
+            "lastModTime": "2021-10-04T22:09:38.076+00:00"
+        },
+        "role": {
+            "roleId": "R03",
+            "roleName": "Student",
+            "roleDesc": "LMS_Student",
+            "creationTime": "2021-10-04T22:06:42.970+00:00",
+            "lastModTime": "2021-10-04T22:06:42.970+00:00"
+        },
+        "batch": [
+            {
+                "batchId": 1,
+                "batchName": "01",
+                "batchDescription": "SDET BATCH 01 Updation",
+                "batchStatus": "In Active",
+                "program": {
+                    "programId": 1,
+                    "programName": "SDET",
+                    "programDescription": null,
+                    "programStatus": "Active"
+                },
+                "batchNoOfClasses": 6
+            },
+            {
+                "batchId": 3,
+                "batchName": "02",
+                "batchDescription": "SDET BATCH 02",
+                "batchStatus": "Active",
+                "program": {
+                    "programId": 3,
+                    "programName": "Machine Learning",
+                    "programDescription": null,
+                    "programStatus": "Active"
+                },
+                "batchNoOfClasses": 6
+            }
+        ],
+        "userRoleStatus": "Active",
+        "creationTime": "2021-10-04T22:18:40.000+00:00",
+        "lastModTime": "2021-10-04T22:18:40.000+00:00"
+    },
+    {
+        "userRoleId": 9,
+        "user": {
+            "userId": "U09",
+            "userFirstName": "Peter",
+            "userLastName": "Rogers",
+            "userPhoneNumber": 6512391300,
+            "userLocation": "Toronto",
+            "userTimeZone": "CST",
+            "userLinkedinUrl": "https://www.linkedin.com/in/MariaPeterson/",
+            "userEduUg": "Information Sciences",
+            "userEduPg": " MBA",
+            "userComments": null,
+            "userVisaStatus": "Canada-EAD",
+            "creationTime": "2021-10-04T22:09:38.076+00:00",
+            "lastModTime": "2021-10-04T22:09:38.076+00:00"
+        },
+        "role": {
+            "roleId": "R03",
+            "roleName": "Student",
+            "roleDesc": "LMS_Student",
+            "creationTime": "2021-10-04T22:06:42.970+00:00",
+            "lastModTime": "2021-10-04T22:06:42.970+00:00"
+        },
+        "batch": [
+            {
+                "batchId": 1,
+                "batchName": "01",
+                "batchDescription": "SDET BATCH 01 Updation",
+                "batchStatus": "In Active",
+                "program": {
+                    "programId": 1,
+                    "programName": "SDET",
+                    "programDescription": null,
+                    "programStatus": "Active"
+                },
+                "batchNoOfClasses": 6
+            },
+            {
+                "batchId": 3,
+                "batchName": "02",
+                "batchDescription": "SDET BATCH 02",
+                "batchStatus": "Active",
+                "program": {
+                    "programId": 3,
+                    "programName": "Machine Learning",
+                    "programDescription": null,
+                    "programStatus": "Active"
+                },
+                "batchNoOfClasses": 6
+            }
+        ],
+        "userRoleStatus": "Active",
+        "creationTime": "2021-10-04T22:18:40.000+00:00",
+        "lastModTime": "2021-10-04T22:18:40.000+00:00"
+    },
+    {
+        "userRoleId": 10,
+        "user": {
+            "userId": "U10",
+            "userFirstName": "Raghav",
+            "userLastName": "Sundar",
+            "userPhoneNumber": 9445677890,
+            "userLocation": "INDIA",
+            "userTimeZone": "IST",
+            "userLinkedinUrl": "https://www.linkedin.com/in/Raghav Sundar/",
+            "userEduUg": "Computer Science Engineering",
+            "userEduPg": " MBA",
+            "userComments": null,
+            "userVisaStatus": "Indian-Citizen",
+            "creationTime": "2021-10-04T22:09:38.076+00:00",
+            "lastModTime": "2021-10-04T22:09:38.076+00:00"
+        },
+        "role": {
+            "roleId": "R03",
+            "roleName": "Student",
+            "roleDesc": "LMS_Student",
+            "creationTime": "2021-10-04T22:06:42.970+00:00",
+            "lastModTime": "2021-10-04T22:06:42.970+00:00"
+        },
+        "batch": [
+            {
+                "batchId": 3,
+                "batchName": "02",
+                "batchDescription": "SDET BATCH 02",
+                "batchStatus": "Active",
+                "program": {
+                    "programId": 3,
+                    "programName": "Machine Learning",
+                    "programDescription": null,
+                    "programStatus": "Active"
+                },
+                "batchNoOfClasses": 6
+            }
+        ],
+        "userRoleStatus": "Active",
+        "creationTime": "2021-10-04T22:18:40.000+00:00",
+        "lastModTime": "2021-10-04T22:18:40.000+00:00"
+    }
+]

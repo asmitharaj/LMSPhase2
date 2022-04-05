@@ -1,6 +1,6 @@
 package com.numpyninja.lms.services;
 
-import com.numpyninja.lms.entity.ProgBatchEntity;
+import com.numpyninja.lms.entity.Batch;
 import com.numpyninja.lms.repository.ProgBatchRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -15,37 +15,37 @@ public class ProgBatchServices {
     private ProgBatchRepository progBatchRepository;
 
     // method for All batch
-    public List<ProgBatchEntity> getAllBatches() {
+    public List<Batch> getAllBatches() {
         return progBatchRepository.findAll();
     }
     
-    public List<ProgBatchEntity> getAllBatches(String searchString) {
+    public List<Batch> getAllBatches(String searchString) {
         return progBatchRepository.findByBatchNameContainingIgnoreCaseOrderByBatchIdAsc(searchString);
     }
 
 
     //method for get single batch by id
-    public Optional<ProgBatchEntity> findBatchById(Integer id) {
+    public Optional<Batch> findBatchById(Integer id) {
         return progBatchRepository.findById(id);
     }
 
     //method for finding BatchName
-    public Optional<ProgBatchEntity> findByProgramBatchName(String name) {
+    public Optional<Batch> findByProgramBatchName(String name) {
         return progBatchRepository.findByBatchName(name);
     }
 
     // create new  Batch under Program
-    public ProgBatchEntity createBatch(ProgBatchEntity newProgrambatch) {
+    public Batch createBatch(Batch newProgrambatch) {
         return progBatchRepository.save(newProgrambatch);
     }
 
     //Update new Batch
-    public ProgBatchEntity updateBatch(ProgBatchEntity updatedProgram, @PathVariable Long id) {
+    public Batch updateBatch(Batch updatedProgram, @PathVariable Long id) {
         return progBatchRepository.save(updatedProgram);
     }
 
     // get Batches by Program ID
-    public List<ProgBatchEntity> findBatchByProgramId(Long programid) {
+    public List<Batch> findBatchByProgramId(Long programid) {
         return progBatchRepository.findAll(ProgBatchRepository.hasProgramId(programid));
     }
 

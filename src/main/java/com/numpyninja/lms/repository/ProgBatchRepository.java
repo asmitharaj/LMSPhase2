@@ -1,6 +1,6 @@
 package com.numpyninja.lms.repository;
 
-import com.numpyninja.lms.entity.ProgBatchEntity;
+import com.numpyninja.lms.entity.Batch;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
@@ -10,16 +10,16 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface ProgBatchRepository extends JpaRepository<ProgBatchEntity, Integer>, JpaSpecificationExecutor<ProgBatchEntity> {
-    static Specification<ProgBatchEntity> hasProgramId(Long programId) {
-        return (programBatchEntity, cq, cb) -> cb.equal(programBatchEntity.get("batchProgramId"), programId);
+public interface ProgBatchRepository extends JpaRepository<Batch, Integer>, JpaSpecificationExecutor<Batch> {
+    static Specification<Batch> hasProgramId(Long programId) {
+        return (batch, cq, cb) -> cb.equal(batch.get("batchProgramId"), programId);
     }
 
-    Optional<ProgBatchEntity> findByBatchName(String programName);
+    Optional<Batch> findByBatchName(String programName);
 
-    List<ProgBatchEntity> findAll(Specification<ProgBatchEntity> hasProgramId);
+    List<Batch> findAll(Specification<Batch> hasProgramId);
 
-    List<ProgBatchEntity> findByBatchNameContainingIgnoreCaseOrderByBatchIdAsc(String batchName);
+    List<Batch> findByBatchNameContainingIgnoreCaseOrderByBatchIdAsc(String batchName);
 
 
 }

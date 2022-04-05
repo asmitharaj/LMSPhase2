@@ -4,14 +4,16 @@ server:
     context-path: /lms
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/postgres
-    username: root
-    password: root
+    url: jdbc:postgresql://localhost:5432/LMS_DB
+    username: postgres   #changed as per Local DB
+    password: postgres   #changed as per Local DB
   jackson.deserialization.fail-on-unknown-properties: true
+  jackson.serialization.fail-on-empty-beans: false  # added
   mvc.hiddenmethod.filter.enabled: true
   main.allow-bean-definition-overriding: true
   #hibernate ddl Auto for CURDOperations
   jpa.hibernate.ddl-auto: none
+
 
 logging:
   file:

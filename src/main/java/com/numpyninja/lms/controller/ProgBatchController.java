@@ -1,7 +1,7 @@
 package com.numpyninja.lms.controller;
 
-import com.numpyninja.lms.entity.ProgBatchEntity;
-import com.numpyninja.lms.entity.ProgramEntity;
+import com.numpyninja.lms.entity.Batch;
+import com.numpyninja.lms.entity.Program;
 import com.numpyninja.lms.services.ProgBatchServices;
 import com.numpyninja.lms.services.ProgramServices;
 import io.swagger.models.auth.In;
@@ -43,8 +43,8 @@ public class ProgBatchController extends BaseController {
 
     @Override
     protected Map<String, Object> addUpdateFields(Map<String, Object> data){
-        ProgramEntity programEntity = programServices.findProgram((Long)data.get("batchProgramId")).get();
-        data.put("batchProgramId", programEntity.getProgramId() + " - " + programEntity.getProgramName());
+        Program program = programServices.findProgram((Long)data.get("batchProgramId")).get();
+        data.put("batchProgramId", program.getProgramId() + " - " + program.getProgramName());
         return data;
     }
 
@@ -54,7 +54,7 @@ public class ProgBatchController extends BaseController {
 
     @GetMapping("/addView")
     String addProgram(Model model) {
-        model.addAttribute("model", new ProgBatchEntity());
+        model.addAttribute("model", new Batch());
         populateDropdowns(model);
         return "LMSAddBatch";
     }
@@ -68,7 +68,7 @@ public class ProgBatchController extends BaseController {
     }
 
     @PostMapping("/add")
-    String createProgram(@ModelAttribute @Valid ProgBatchEntity batch, BindingResult bindingResult, Model model, RedirectAttributes redirectAttributes) {
+    String createProgram(@ModelAttribute @Valid Batch batch, BindingResult bindingResult, Model model, RedirectAttributes redirectAttributes) {
         if (bindingResult.hasErrors()) {
             model.addAttribute("errors", formatErrors(bindingResult));
             model.addAttribute("model", batch);
@@ -81,7 +81,7 @@ public class ProgBatchController extends BaseController {
 
     //Update program Information
     @PutMapping("/save/{id}")
-    String updateProgram(@ModelAttribute @Valid ProgBatchEntity batch, BindingResult bindingResult, @PathVariable Long id, Model model, RedirectAttributes redirectAttributes) {
+    String updateProgram(@ModelAttribute @Valid Batch batch, BindingResult bindingResult, @PathVariable Long id, Model model, RedirectAttributes redirectAttributes) {
         if (bindingResult.hasErrors()) {
             model.addAttribute("errors", formatErrors(bindingResult));
             model.addAttribute("model", batch);
