@@ -45,7 +45,7 @@ public class UserRoleMap {
     @JoinColumn ( name = "role_id", nullable = false )
 	private Role role;
 	
-	@ManyToMany ( cascade = CascadeType.ALL )  //  defualt is fetch = FetchType.LAZY
+	@ManyToMany ( cascade = CascadeType.ALL )  //  defualt fetch is FetchType.LAZY ; so we dont need to specify expilcitly
 	@JoinTable(name="tbl_lms_userbatch_map",
                joinColumns={@JoinColumn(name="user_role_id")},
                inverseJoinColumns={@JoinColumn(name="batch_id")})
